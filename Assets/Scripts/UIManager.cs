@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] Controller _controller;
-    [SerializeField] TMP_Dropdown _gameMode;
-    [SerializeField] TMP_Dropdown _navigationType;
+    [SerializeField] private Controller _controller;
+    [SerializeField] private TMP_Dropdown _gameMode;
+    [SerializeField] private TMP_Dropdown _navigationType;
 
-    [SerializeField] RectTransform _uiPanel;
-    [SerializeField] GameObject _slideOut;
-    [SerializeField] GameObject _slideIn;
+    [SerializeField] private RectTransform _uiPanel;
+    [SerializeField] private GameObject _slideOut;
+    [SerializeField] private GameObject _slideIn;
 
-    [SerializeField] TMP_InputField _entityCount;
-    [SerializeField] TMP_InputField _staticCount;
-    [SerializeField] TextMeshProUGUI _startText;
-    [SerializeField] GameObject _pauseButton;
-    [SerializeField] GameObject _resumeButton;
-    [SerializeField] GameObject _resetCameraButton;
+    [SerializeField] private TMP_InputField _entityCount;
+    [SerializeField] private TMP_InputField _staticCount;
+    [SerializeField] private TextMeshProUGUI _startText;
+    [SerializeField] private GameObject _pauseButton;
+    [SerializeField] private GameObject _resumeButton;
+    [SerializeField] private GameObject _resetCameraButton;
 
     private Camera _mainCamera;
     private Transform _cameraTransform;

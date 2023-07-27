@@ -3,7 +3,8 @@ using UnityEngine.AI;
 
 public class StaticEntity : MonoBehaviour, IEntity
 {
-    public Vector3 Position {
+    public Vector3 Position
+    {
         get => _navigationType == NavigationType.Default ? _rigidbody.position : _transform.position;
         private set
         { 

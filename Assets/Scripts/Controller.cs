@@ -87,8 +87,8 @@ public class Controller : MonoBehaviour
     public bool IsRunning => _started;
     public LineController LineController => _lineController;
 
-    [SerializeField] GameMode _mode;
-    [SerializeField] NavigationType _navigationType;
+    [SerializeField] private GameMode _mode;
+    [SerializeField] private NavigationType _navigationType;
     [SerializeField] private int _entityCount;
     [SerializeField] private int _staticEntityCount;
     [SerializeField] private float _spawnAreaRadius;
@@ -209,7 +209,7 @@ public class Controller : MonoBehaviour
 }
 
 #if UNITY_EDITOR
-    [CustomEditor(typeof(Controller))]
+[CustomEditor(typeof(Controller))]
 public class ControllerEditor : Editor
 {
     public override void OnInspectorGUI()
